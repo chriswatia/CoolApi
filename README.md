@@ -10,6 +10,9 @@ ASP.NET Core API with Entity Framework Core and MSSQL Database
 | API | Description | Request body | Response body |
 | --- | --- | --- | --- |
 | GET /api/student | Get all students | None | Array of all students |
+| GET /api/Student/getbyid/{id} | Get student by id | id | Array of one Student |
+| POST /api/Student | Create Student | firstname,lastName,county | Array of the created student |
+
 
 # Swagger
 Swagger takes the manual work out of API documentation, with a range of solutions for generating, visualizing, and maintaining API docs.
