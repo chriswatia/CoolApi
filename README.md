@@ -13,3 +13,4 @@ ASP.NET Core API with Entity Framework Core and MSSQL Database
 
 # Swagger
 Swagger takes the manual work out of API documentation, with a range of solutions for generating, visualizing, and maintaining API docs.
+1. API https://localhost:port/swagger/index.html
