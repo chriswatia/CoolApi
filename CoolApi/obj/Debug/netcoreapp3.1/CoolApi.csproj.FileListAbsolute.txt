@@ -60,5 +60,11 @@ C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\runt
 C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\obj\Debug\netcoreapp3.1\CoolApi.csproj.CoreCompileInputs.cache
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\obj\Debug\netcoreapp3.1\CoolApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\obj\Debug\netcoreapp3.1\CoolApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SoftClansTech\source\repos\CoolApi\CoolApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll

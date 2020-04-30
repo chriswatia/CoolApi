@@ -1,10 +1,12 @@
 using CoolApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace CoolApi
 {
@@ -22,7 +24,23 @@ namespace CoolApi
         {
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<StudentContext>(opt => opt.UseSqlServer(connectionString));
-           
+
+            services.AddSwaggerGen(c =>
+                    {
+                        c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                        {
+                            Version = "v1",
+                            Title = "Cool ASP.NET Core Rest API",
+                            Description = "List of ASP.NET Core Rest API",
+                            //TermsOfService = "None",
+                            Contact = new Microsoft.OpenApi.Models.OpenApiContact()
+                            {
+                                Name = "Chris Watia",
+                                Email = "chriswatia@gmail.com",
+                                //Url = "https://twitter.com/chriswatia"
+                            }
+                        });
+                    });
 
             services.AddControllers();
         }
@@ -37,6 +55,15 @@ namespace CoolApi
 
             app.UseHttpsRedirection();
 
+            app.UseSwagger();
+
+            //Enable middleware to use swagger-ui
+            //Specifying the Swagger Json endpoint
+            app.UseSwaggerUI(opt =>
+            {
+                opt.SwaggerEndpoint("/swagger/v1/swagger.json", "Cool ASP.NET Core rest API");
+            });
+
             app.UseRouting();
 
             app.UseAuthorization();
@@ -45,6 +72,8 @@ namespace CoolApi
             {
                 endpoints.MapControllers();
             });
+
+            
         }
     }
 }
